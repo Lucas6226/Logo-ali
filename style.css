@@ -10,8 +10,40 @@
     font-family: 'Assistant', sans-serif;
 }
 
-strong {
-    color: rgb(255, 208, 0);
+:root {
+    --vermelho: rgb(189, 27, 27);
+    --amarelo: rgb(217, 163, 56);
+    --sombra: 0px 3px 5px rgba(0, 0, 0, 0.16);
+
+    --title-font: 'Bungee Shade', cursive;
+}
+
+amarelo {
+    color: var(--amarelo);
+}
+
+vermelho {
+    color: var(--vermelho);
+}
+
+#cabecalho {
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    box-shadow: var(--sombra);
+    padding-bottom: 20px;
+}
+
+#cabecalho h1 {
+    padding-top: 15px;
+    padding-left: 20px;
+    text-align: left;
+    color: var(--vermelho);
+    font-size: 3em;
+    font-family: var(--title-font);
+}
+
+#cabecalho > h1 > amarelo {
+    font-family: var(--title-font);
 }
 
 li {
@@ -28,59 +60,43 @@ ul a {
 }
 
 ul a:hover {
-    color: rgb(217, 163, 56);
-    text-decoration: underline;
-    text-decoration-color: rgb(189, 27, 27);
-
-}
-
-#cabecalho {
-    margin: auto;
-    background-color: white;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
-    padding-bottom: 20px;
-}
-
-#cabecalho h1 {
-    padding-top: 15px;
-    padding-left: 20px;
-    text-align: left;
-    color: red;
-    font-size: 2.5em;
-    font-family: 'Bungee Shade', cursive;
-}
-
-#cabecalho > h1 > strong {
-    font-family: 'Bungee Shade', cursive;
+    color: var(--vermelho);
 }
 
 main {
-    padding: 30px 60px 30px 60px;
+    padding: 10px 20px 10px 20px;
+    max-width: 1200px;
+    min-width: 300px;
+    margin: auto;
 }
 
 main > h1 {
-    margin: 30px;
-    font-size: 2.3em;
+    margin: 30px 0px 30px 0px;
+    font-size: 2.5em;
 }
 
 #button {
-    margin: 30px 0px 30px 85px;
+    margin: 30px 0px 30px 0px;
     width: 150px;
     height: 40px;
     
     border-radius: 25px;
-    background-color: rgba(255, 0, 0, 0.742);
-    border-color: rgb(0, 0, 0);
+    background-color: var(--vermelho);
     color: white;
-
+    
     font-size: 1.1em;
     font-weight: 500;
-
-    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.16);
+    
+    box-shadow: var(--sombra);
 }
 
 #button:hover {
-    background-color: rgba(255, 0, 0, 0.934);
-    border-color: rgb(0, 0, 0);
-    color: rgb(255, 208, 0);
+    background-color: var(--vermelho);
+    border-color: black;
+    color: var(--amarelo);
+}
+
+.text {
+    font-size: 1.5em;
+    margin: 30px 0px 30px 0px;
 }
