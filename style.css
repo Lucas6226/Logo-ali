@@ -1,21 +1,86 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    font-family: 'Assistant', sans-serif;
+}
+
+strong {
+    color: rgb(255, 208, 0);
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+ul a {
+    margin: 7px;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: black;
+}
+
+ul a:hover {
+    color: rgb(217, 163, 56);
+    text-decoration: underline;
+    text-decoration-color: rgb(189, 27, 27);
+
 }
 
 #cabecalho {
     margin: auto;
-    background-color: red;
-    width: 1500px;
-    height: 100px;
-
-    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
+    padding-bottom: 20px;
 }
 
 #cabecalho h1 {
     padding-top: 15px;
-    text-align: center;
-    color: blue;
+    padding-left: 20px;
+    text-align: left;
+    color: red;
+    font-size: 2.5em;
+    font-family: 'Bungee Shade', cursive;
+}
+
+#cabecalho > h1 > strong {
+    font-family: 'Bungee Shade', cursive;
+}
+
+main {
+    padding: 30px 60px 30px 60px;
+}
+
+main > h1 {
+    margin: 30px;
+    font-size: 2.3em;
+}
+
+#button {
+    margin: 30px 0px 30px 85px;
+    width: 150px;
+    height: 40px;
+    
+    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0.742);
+    border-color: rgb(0, 0, 0);
+    color: white;
+
+    font-size: 1.1em;
+    font-weight: 500;
+
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.16);
+}
+
+#button:hover {
+    background-color: rgba(255, 0, 0, 0.934);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 208, 0);
 }
