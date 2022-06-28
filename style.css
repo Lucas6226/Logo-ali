@@ -10,6 +10,14 @@
     font-family: 'Assistant', sans-serif;
 }
 
+vermelho {
+    color: var(--vermelho);
+}
+
+amarelo {
+    color: var(--amarelo);
+}
+
 :root {
     --vermelho: rgb(189, 27, 27);
     --amarelo: rgb(217, 163, 56);
@@ -18,12 +26,15 @@
     --title-font: 'Bungee Shade', cursive;
 }
 
-amarelo {
-    color: var(--amarelo);
+#image-1 {
+    max-width: 300px;
 }
 
-vermelho {
-    color: var(--vermelho);
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px 190px 0px;
+    padding: 0px 50px 0px 50px;
 }
 
 #cabecalho {
@@ -64,7 +75,7 @@ ul a:hover {
 }
 
 main {
-    padding: 10px 20px 10px 20px;
+    padding: 80px 20px 10px 20px;
     max-width: 1200px;
     min-width: 300px;
     margin: auto;
