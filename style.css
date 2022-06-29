@@ -21,9 +21,12 @@ amarelo {
 :root {
     --vermelho: #bd1b1b;
     --amarelo: #d9a338;
-    --sombra: 0px 3px 5px rgba(0, 0, 0, 0.16);
+    --laranja: #c95727;
+    --sombra: 0px 0px 7px rgba(0, 0, 0, 0.39);
 
     --title-font: 'Bungee Shade', cursive;
+    --text-weight: 500;
+    --text-size: 1.1em;
 }
 
 .divider {
@@ -55,7 +58,7 @@ amarelo {
 #cabecalho {
     padding: 0px 20px 10px 20px;
     background-color: white;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.39);
+    box-shadow: var(--sombra);
     padding-bottom: 20px;
 }
 
@@ -89,6 +92,8 @@ ul #menu-1:hover {
     background: transparent;
     border-image: linear-gradient(to right, rgb(189, 27, 27), rgb(196, 60, 34)) 1;
     border-radius: 5px;
+    color: var(--vermelho);
+    transition-duration: 0.45s;
 }
 
 ul #menu-2:hover {
@@ -96,24 +101,32 @@ ul #menu-2:hover {
     background: transparent;
     border-image: linear-gradient(to right, rgb(199, 73, 37), rgb(200, 79, 38)) 1;
     border-radius: 5px;
+    color: var(--vermelho);
+    transition-duration: 0.45s;
 }
 ul #menu-3:hover {
     border-bottom: 6px solid;
     background: transparent;
     border-image: linear-gradient(to right, rgb(201, 87, 39), rgb(203, 139, 42)) 1;
     border-radius: 5px;
+    color: var(--laranja);
+    transition-duration: 0.45s;
 }
 ul #menu-4:hover {
     border-bottom: 6px solid;
     background: transparent;
     border-image: linear-gradient(to right, rgb(206,112, 45), rgb(209, 126, 48)) 1;
     border-radius: 5px;
+    color: var(--amarelo);
+    transition-duration: 0.45s;
 }
 ul #menu-5:hover {
     border-bottom: 6px solid;
     background: transparent;
     border-image: linear-gradient(to right, rgb(213, 142, 52), rgb(217, 162, 56)) 1;
     border-radius: 5px;
+    color: var(--amarelo);
+    transition-duration: 0.45s;
 }
 
 main > h1 {
@@ -144,8 +157,8 @@ main > h1 {
 
 .text {
     text-align: center;
-    font-weight: 300;
-    font-size: 1.1em;
+    font-weight: var(--text-weight);
+    font-size: var(--text-font-size);
     margin: 0px 0px 90px 0px;
 }
 
@@ -190,4 +203,30 @@ main > h1 {
 
 .image-3 {
     height: 300px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cards h1 {
+    font-family: var(--title-font);
+}
+
+.card {
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    box-shadow: var(--sombra);
+    border-top: 0.25em solid var(--vermelho);
+    border-bottom: 0.25em solid var(--amarelo);
+    text-align: center;
+}
+
+.card > p {
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+    padding: 50px;
 }
