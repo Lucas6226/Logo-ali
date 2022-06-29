@@ -26,26 +26,35 @@ amarelo {
     --title-font: 'Bungee Shade', cursive;
 }
 
+.divider {
+    background-image: linear-gradient(to left, var(--amarelo), var(--vermelho), var(--amarelo));
+    width: 100%;
+    height: 2px;
+}
+
 #image-1 {
     max-width: 300px;
 }
 
-.container {
+.section {
     display: flex;
     justify-content: space-between;
-    margin: 60px 0px 190px 0px;
-    padding: 0px 50px 0px 50px;
+    margin: 60px 0px 450px 0px;
+    padding: 80px 20px 10px 20px;
+    max-width: 1100px;
+    min-width: 300px;
+    margin: auto;
 }
 
 #cabecalho {
-    padding: 10px 20px 10px 20px;
+    padding: 0px 20px 10px 20px;
     background-color: white;
-    box-shadow: var(--sombra);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.39);
     padding-bottom: 20px;
 }
 
 #cabecalho h1 {
-    padding-top: 15px;
+    padding-top: 10px;
     padding-left: 20px;
     text-align: left;
     color: var(--vermelho);
@@ -72,13 +81,6 @@ ul a {
 
 ul a:hover {
     color: var(--vermelho);
-}
-
-main {
-    padding: 80px 20px 10px 20px;
-    max-width: 1200px;
-    min-width: 300px;
-    margin: auto;
 }
 
 main > h1 {
@@ -108,6 +110,8 @@ main > h1 {
 }
 
 .text {
-    font-size: 1.5em;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.1em;
     margin: 30px 0px 30px 0px;
 }
