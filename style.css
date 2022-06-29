@@ -19,8 +19,8 @@ amarelo {
 }
 
 :root {
-    --vermelho: rgb(189, 27, 27);
-    --amarelo: rgb(217, 163, 56);
+    --vermelho: #bd1b1b;
+    --amarelo: #d9a338;
     --sombra: 0px 3px 5px rgba(0, 0, 0, 0.16);
 
     --title-font: 'Bungee Shade', cursive;
@@ -30,17 +30,23 @@ amarelo {
     background-image: linear-gradient(to left, var(--amarelo), var(--vermelho), var(--amarelo));
     width: 100%;
     height: 2px;
+    margin: 70px 0px 70px 0px;
+}
+
+#header-divider {
+    background-image: linear-gradient(to left, var(--amarelo), var(--vermelho), var(--amarelo));
+    width: 100%;
+    height: 2px;
+    margin: 0px 0px 90px 0px;
 }
 
 #image-1 {
-    max-width: 300px;
+    max-width: 270px;
 }
 
 .section {
     display: flex;
     justify-content: space-between;
-    margin: 60px 0px 450px 0px;
-    padding: 80px 20px 10px 20px;
     max-width: 1100px;
     min-width: 300px;
     margin: auto;
@@ -54,7 +60,6 @@ amarelo {
 }
 
 #cabecalho h1 {
-    padding-top: 10px;
     padding-left: 20px;
     text-align: left;
     color: var(--vermelho);
@@ -73,14 +78,42 @@ li {
 }
 
 ul a {
-    margin: 7px;
+    padding: 7px;
     font-weight: 700;
     font-size: 1.2em;
     color: black;
 }
 
-ul a:hover {
-    color: var(--vermelho);
+ul #menu-1:hover {
+    border-bottom: 6px solid;
+    background: transparent;
+    border-image: linear-gradient(to right, rgb(189, 27, 27), rgb(196, 60, 34)) 1;
+    border-radius: 5px;
+}
+
+ul #menu-2:hover {
+    border-bottom: 6px solid;
+    background: transparent;
+    border-image: linear-gradient(to right, rgb(199, 73, 37), rgb(200, 79, 38)) 1;
+    border-radius: 5px;
+}
+ul #menu-3:hover {
+    border-bottom: 6px solid;
+    background: transparent;
+    border-image: linear-gradient(to right, rgb(201, 87, 39), rgb(203, 139, 42)) 1;
+    border-radius: 5px;
+}
+ul #menu-4:hover {
+    border-bottom: 6px solid;
+    background: transparent;
+    border-image: linear-gradient(to right, rgb(206,112, 45), rgb(209, 126, 48)) 1;
+    border-radius: 5px;
+}
+ul #menu-5:hover {
+    border-bottom: 6px solid;
+    background: transparent;
+    border-image: linear-gradient(to right, rgb(213, 142, 52), rgb(217, 162, 56)) 1;
+    border-radius: 5px;
 }
 
 main > h1 {
@@ -111,7 +144,50 @@ main > h1 {
 
 .text {
     text-align: center;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.1em;
-    margin: 30px 0px 30px 0px;
+    margin: 0px 0px 90px 0px;
+}
+
+#image-2 {
+    min-width: 100%;
+    margin-bottom: 50px;
+}
+
+.frame {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to left, var(--amarelo), var(--vermelho));
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.frame p {
+    padding: 0px 120px 0px 120px;
+}
+
+#frame {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to left, var(--vermelho), var(--amarelo));
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+#frame p {
+    padding: 0px 120px 0px 120px;
+}
+
+.image-3 {
+    height: 300px;
 }
