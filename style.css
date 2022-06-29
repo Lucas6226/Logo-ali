@@ -209,6 +209,7 @@ main > h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 30px 30px 30px 30px;
 }
 
 #cards h1 {
@@ -220,9 +221,13 @@ main > h1 {
     width: 450px;
     background-color: white;
     box-shadow: var(--sombra);
-    border-top: 0.25em solid var(--vermelho);
-    border-bottom: 0.25em solid var(--amarelo);
+    border-top: 0.5em solid var(--vermelho);
+    border-bottom: 0.5em solid var(--amarelo);
     text-align: center;
+}
+
+.card :hover {
+        
 }
 
 .card > p {
