@@ -63,24 +63,34 @@
             <div class="card">
                 <h1>drinks</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure autem eius nemo eos officiis dolor omnis. Consectetur culpa, quae asperiores quam qui minus eius nobis saepe labore dignissimos voluptas!</p>
+                <a href=""><h2>Saiba mais</h2></a>
             </div>
             <div class="card">
                 <h1>pratos</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi fugiat blanditiis itaque sequi beatae architecto reiciendis omnis veniam? Animi quo eligendi veniam aut nobis! Obcaecati ad quibusdam tempora suscipit reiciendis?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi fugiat blanditiis itaque sequi beatae architecto reiciendis omnis veniam? Animi quo eligendi veniam aut nobis! Obcaecati ad quibusdam tempora suscipi</p>
+                <a href=""><h2>Saiba mais</h2></a>
             </div>
             <div class="card">
-                <h1>doces</h1>
+                <h1>doçes</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta dolor asperiores, atque iste porro animi unde cumque debitis quaerat inventore deleniti aliquid ea tempora deserunt commodi repellat enim eum. Sit!</p>
+                <a href=""><h2>Saiba mais</h2></a>
             </div>
-
         </div>
 
         <div class="divider"></div>
-
-
     </main>
     <footer>
 
     </footer>
+
+    <script>
+        var a = window.document.getElementsByClassName('card')
+        a.addEventListener('mouseenter', entrar)
+
+        function entrar() {
+            a.innerHTML = '<p>red</p>'
+        }
+
+    </script>
 </body>
 </html>

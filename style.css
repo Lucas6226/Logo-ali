@@ -88,45 +88,40 @@ ul a {
 }
 
 ul #menu-1:hover {
-    border-bottom: 6px solid;
+    border-bottom: 3px solid;
     background: transparent;
     border-image: linear-gradient(to right, rgb(189, 27, 27), rgb(196, 60, 34)) 1;
     border-radius: 5px;
     color: var(--vermelho);
-    transition-duration: 0.45s;
 }
 
 ul #menu-2:hover {
-    border-bottom: 6px solid;
+    border-bottom: 3px solid;
     background: transparent;
     border-image: linear-gradient(to right, rgb(199, 73, 37), rgb(200, 79, 38)) 1;
     border-radius: 5px;
     color: var(--vermelho);
-    transition-duration: 0.45s;
 }
 ul #menu-3:hover {
-    border-bottom: 6px solid;
+    border-bottom: 3px solid;
     background: transparent;
     border-image: linear-gradient(to right, rgb(201, 87, 39), rgb(203, 139, 42)) 1;
     border-radius: 5px;
     color: var(--laranja);
-    transition-duration: 0.45s;
 }
 ul #menu-4:hover {
-    border-bottom: 6px solid;
+    border-bottom: 3px solid;
     background: transparent;
     border-image: linear-gradient(to right, rgb(206,112, 45), rgb(209, 126, 48)) 1;
     border-radius: 5px;
     color: var(--amarelo);
-    transition-duration: 0.45s;
 }
 ul #menu-5:hover {
-    border-bottom: 6px solid;
+    border-bottom: 3px solid;
     background: transparent;
     border-image: linear-gradient(to right, rgb(213, 142, 52), rgb(217, 162, 56)) 1;
     border-radius: 5px;
     color: var(--amarelo);
-    transition-duration: 0.45s;
 }
 
 main > h1 {
@@ -216,18 +211,23 @@ main > h1 {
     font-family: var(--title-font);
 }
 
+#cards h2 {
+    color: var(--amarelo);
+}
+
 .card {
     height: 450px;
     width: 450px;
-    background-color: white;
     box-shadow: var(--sombra);
     border-top: 0.5em solid var(--vermelho);
-    border-bottom: 0.5em solid var(--amarelo);
+    border-bottom: 0.5em solid var(--vermelho);
     text-align: center;
+    transition: height 0.1s;
 }
 
-.card :hover {
-        
+.card:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.785);
+    transition-duration: 0.5s;
 }
 
 .card > p {
