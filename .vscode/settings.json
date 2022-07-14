@@ -1,0 +1,10 @@
+{
+    "workbench.colorCustomizations": {
+    
+        "[Omni]": {
+            "editorSuggestWidget.highlightForeground": "#b0bf1a"
+        }
+    },
+    "workbench.colorTheme": "Mars",
+    "liveServer.settings.port": 5501
+}
